@@ -30,16 +30,16 @@ public class MVP {
              .forEach
                      (x ->
                              System.out.println(x));
-
-
-
-
     }
 
+    
 
     /*
         Given a List<Integers>, return a List<Integer> with event numbers.
      */
+    
+    
+    
     public List<Integer> returnEvenNumbers(List<Integer> numbers) {
 
         //creating variable to store everything + then return it
@@ -57,11 +57,17 @@ public class MVP {
         return numbers ;
     }
 
+    
+    
     /*
         Given an int [], double the value of each int and return an int [].
     */
+    
+    
 
-    // INT ARRAYS---------------------------------------------
+    // INT ARRAYS----------------------------------------------------------------------
+    
+    
     public int[] doubleInts(int[] numbers) {
 
 
@@ -81,6 +87,8 @@ public class MVP {
     /*
         Given a String, return a List<String>, all caps.
      */
+    
+    
     public List<String> splitToAllCapsList(String input) {
 
 
@@ -99,13 +107,19 @@ public class MVP {
                              (c -> c.toUpperCase()));
 
 */
+        
+        
 
         toCaps= toCaps
                 .stream().map(c -> c.toUpperCase()).toList();
 
 
         return  toCaps;
+        
     }
+    
+    
+    
 
     /*
     Given a list of animals:
@@ -113,6 +127,9 @@ public class MVP {
      - return sorted List<String>, all caps.
     */
 
+    
+    
+    
 
     public List<String> filterByFirstLetterAndOrder(List<String> list, String letter) {
 
@@ -130,12 +147,16 @@ public class MVP {
 
         return list;
     }
+    
 
     /*
         Given a list of words, return elements that:
          - are shorter than the given number and
          - start with a given letter.
     */
+    
+    
+    
     public List<String> filterWords(List<String> words, int maxLength, String firstLetter) {
 
 
